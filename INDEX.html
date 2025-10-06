@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONNAMMAL Snacks Private Limited</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font for Tamil -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>PONNAMMAL Snacks Private Limited</h1>
+        <p class="slogan">தீதும் நன்றும் பிறர் தர வாரா!</p>
+        <p><strong>Brand Name:</strong> PONNAMMAL Snacks</p>
+        <p><strong>Owner:</strong> CIBI BALA & Friends</p>
+        <p><strong>Established Year:</strong> 12-09-2025</p>
+        <p><strong>Location:</strong> LANDHAKOTTAI, DINIDIGUL, TAMILNADU, INDIA</p>
+    </header>
+
+    <section class="description">
+        <h2>About Us</h2>
+        <ul>
+            <li>Create wealth for me and my community</li>
+            <li>Make a statement</li>
+        </ul>
+    </section>
+
+    <section class="products">
+        <h2>Our Snacks</h2>
+        <p>Select your favorite snacks:</p>
+
+        <div class="product-grid">
+            <!-- NUTS BAR Card with Flavor Selection -->
+            <div class="product-card" onclick="toggleSelection(this)">
+                <img src="nutsbar.jpg" alt="NUTS BAR">
+                <p>NUTS BAR</p>
+                <div class="flavors" style="display:none;">
+                    <label for="nuts-flavors">Choose a flavor:</label>
+                    <select id="nuts-flavors">
+                        <option value="Pistachio">Pistachio</option>
+                        <option value="Badam">Badam</option>
+                        <option value="Dates">Dates</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- PEANUT BAR Card -->
+            <div class="product-card" onclick="toggleSelection(this)">
+                <img src="peanutbar.jpg" alt="PEANUT BAR">
+                <p>PEANUT BAR</p>
+            </div>
+
+            <!-- Add more products if needed -->
+        </div>
+
+        <button onclick="showSelection()">Submit</button>
+        <p id="selectedProducts"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
