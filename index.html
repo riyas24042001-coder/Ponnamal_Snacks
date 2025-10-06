@@ -37,7 +37,7 @@
                 <p>NUTS BAR</p>
                 <div class="flavors" style="display:none;">
                     <label for="nuts-flavors">Choose a flavor:</label>
-                    <select id="nuts-flavors">
+                    <select id="nuts-flavors" onchange="event.stopPropagation();">
                         <option value="Pistachio">Pistachio</option>
                         <option value="Badam">Badam</option>
                         <option value="Dates">Dates</option>
